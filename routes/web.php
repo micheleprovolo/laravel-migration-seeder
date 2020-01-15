@@ -12,3 +12,5 @@
 */
 
 Route::get('/movies', 'MovieController@index');
+
+Route::get('/fumetti', 'fumettiController@getFumetti');

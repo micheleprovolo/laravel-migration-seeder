@@ -12,7 +12,7 @@ class MovieController extends Controller
     {
         $movies = Movie::all();
 
-        return view('movies', compact('movies'));
+        return view('pages.movies', compact('movies'));
     }
 
 }
