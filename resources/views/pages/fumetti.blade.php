@@ -2,12 +2,14 @@
 
 @section('contenuto')
     <ol>
-        @foreach($ as $)
+        @foreach($comics as $comic)
             <li>
                 <ul>
-                    <li>{{ $ -> title }}</li>
-                    <li>{{ $ -> year }}</li>
-                    <li>{{ $ -> overview }}</li>
+                    <li>{{ $comic -> title }}</li>
+                    <li>{{ $comic -> year }}</li>
+                    <li>{{ $comic -> author }}</li>
+                    <li>{{ $comic -> comment }}</li>
+                    <li>{{ $comic -> rate }}</li>
                 </ul>
             </li>
             <br>

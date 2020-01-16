@@ -13,4 +13,4 @@
 
 Route::get('/movies', 'MovieController@index');
 
-Route::get('/fumetti', 'fumettiController@getFumetti');
+Route::get('/comics', 'fumettiController@getComics');

@@ -6,11 +6,12 @@ use Illuminate\Http\Request;
 
 class fumettiController extends Controller
 {
-    public function getFumetti() {
+    public function getComics() {
 
-        $fumetti = Comic::all();
+        $comics = Comic::all();
+        // dd($comics);
 
-        return view ('pages.fumetti', compact('fumetti'));
+        return view ('pages.fumetti', compact('comics'));
 
     }
 
